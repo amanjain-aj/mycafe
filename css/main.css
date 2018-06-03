@@ -1,0 +1,137 @@
+* {
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+}
+html, body, section, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+  -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+  color: #fff;
+  background: linear-gradient(to left, rgba(255,255,255,0.9), rgba(0,0,0,0.9)),url('../images/cover.jpg'); 
+  background-blend-mode: multiply,multiply;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section {
+  width: 500%;  
+}
+
+.page {
+  position: absolute;
+}
+#p1 {
+  left: 0;
+}
+
+#p2 {
+  left: 100%;
+  background: #ED2024;
+}
+
+#p3 {
+  left: 200%;
+  background: #0E0E0E;
+}
+
+#p4 {
+  left: 300%;
+  background: #212121;
+}
+#p5 {
+  left: 400%;
+  background: #F68B1F;
+}
+#p6 {
+  left: 500%;
+  background: #CBCBCA;
+}
+ul {
+ position: fixed; 
+ z-index: 1;
+}
+#m1:target .page#p1 {
+    transform: translateX(0);
+}
+#m2:target .page#p2 {
+    transform: translateX(-90%);
+}
+#m3:target .page#p3 {
+    transform: translateX(-190%);
+}
+#m4:target .page#p4 {
+    transform: translateX(-290%);
+}
+#m5:target .page#p5 {
+    transform: translateX(-390%);
+}
+#m6:target .page#p6 {
+    transform: translateX(-490%);
+}
+#m2:target .page#p1, 
+#m3:target .page#p1,
+#m4:target .page#p1,
+#m5:target .page#p1,
+#m6:target .page#p1 {
+   -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-color: rgba(33,33,33,0.8); 
+}
+
+.icon {
+  color: #999;
+  font-size: 26px;
+  display: block;
+}
+ul .icon:hover {
+  opacity: 0.6;
+}
+#m2:target ul .icon,
+#m3:target ul .icon,
+#m4:target ul .icon,
+#m5:target ul .icon,
+#m6:target ul .icon {
+  transform: scale(.6); 
+  transition-delay: .25s;
+}
+#m2:target #icon2 {
+  transform: scale(1.2) !important;
+}
+
+#m3:target #icon3 {
+  transform: scale(1.2) !important;
+}
+
+#m4:target #icon4 {
+  transform: scale(1.2) !important;
+}
+#m5:target #icon5 {
+  transform: scale(1.2) !important;
+}
+
+#m6:target #icon6 {
+  transform: scale(1.2) !important;
+}
+ul {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+ }
+
+ul li {
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: open sans, sans-serif;
+}
