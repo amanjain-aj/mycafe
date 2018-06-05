@@ -5,7 +5,7 @@ $(document).ready(function() {
   var active3 = false;
   var active4 = false;
 
-    $('.listhead').on('mousedown touchstart', function() {
+    $('.listhead').on('mousedown', function() {
     
     if (!active1) $(this).find('.i1').css({'background-color': 'rgba(14,14,14,0.6)', 'transform': 'translate(0px,-125px)'});
     else $(this).find('.i1').css({'background-color': 'rgba(14,14,14,0.6)', 'transform': 'none'}); 
