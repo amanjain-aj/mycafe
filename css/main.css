@@ -22,7 +22,8 @@ html, body, section, .page {
   transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
   -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
   color: #fff;
-  background: rgb(0, 0, 0,0.9)  url('../images/bgx.jpg'); 
+  background: rgb(0, 0, 0,0.9)  url('../images/bgx.jpg');
+
   overflow-x: hidden !important;
   background-position: top-right;
   background-size: cover;
@@ -172,11 +173,16 @@ a {
   resize: vertical;
   overflow: auto;
 }
+@media (max-width: 420px) {
+  #head {
+    left: 10%;
+  }
 
+} 
 #head1 {
   position: absolute;
   top: 40%;
- margin-left: -30px;
+  margin-left: -30px;
   transform: translateY(-50%);
   resize: vertical;
   overflow: auto;
@@ -186,16 +192,35 @@ a {
     display: none;
   }
 } 
-h1 {
+#p1 h1 {
 	font-family: "Delius Swash Caps";
 	font-size: 50px;
-	font-style: italic;
+	color: #F68B1F;
+}
+#p2 h1 {
     color: #F68B1F;
 }
 p {
 	font-style: italic;
 	font-size: 20px;
 	text-decoration: none;
+}
+.img-tilt {
+  top: 18%;
+  position: relative;
+   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.img-tilt img {
+  width: 85%;
+
+}
+@media(max-width: 420px){
+  .img-tilt {
+    display: none;
+  }
 }
 .listhead {
 
@@ -299,17 +324,22 @@ p {
 }
 #child {
 	position: absolute;
-  top: 75%;
+  top: 65%;
   left: 2%;
   transform: translateY(-75%);
   resize: vertical;
   overflow: auto;
 }
-h2 {
+@media(max-width: 420px) {
+  #child {
+    left: 10%;
+  }
+}
+
+#p1 h2 {
 	font-family: "Delius Swash Caps";
 	font-size: 24px;
-	font-style: italic;
-    color: #F68B1F;
+	color: #F68B1F;
 }
 #child p{
 		font-size: 15px;
@@ -318,7 +348,6 @@ h2 {
 span{
  font-family: "Delius Swash Caps";
   font-size: 50px;
-  font-style: italic;
     color: #F68B1F;
  
 }
