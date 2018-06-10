@@ -2,25 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=no">
 	<title>MyCafe</title>
+
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--     Fonts and icons     -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <!---Owl Carousel-------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+    <!------------------------------------------>
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 	<link rel="stylesheet" href="css/main.css">
-	
-	<!-- jQuery library -->
+    <link href="css/material-bootstrap-wizard.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!-----------Scripts---------------------------->
+	  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Popper JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+         new WOW().init();
+    </script>
+    <!------------------------------------------------->
 </head>
 <body >
+      <div id="preloader">
+        <img src="./images/39.gif" alt="">
+      </div>
     	<div class="home" id="m1">
     		<div class="menu" id="m2">
     			<div class="reservation" id="m3">
@@ -28,55 +47,77 @@
     					<div class="testimonials" id="m5">
     						<div class="contact" id="m6">
     							<section>
-    								<ul>
+    								<ul class="menu">
     									<a href="#m1"><li class="icon fa fa-home" id="icon1" title="Home"></li></a>
     									<a href="#m2"><li class="icon fa fa-group" id="icon2" title="About"></li></a>
     									<a href="#m3"><li class="icon fa fa-cutlery" id="icon3" title="Menu"></li></a>
     									<a href="#m4"><li class="icon fa fa-book" id="icon4" title="Reservation"></li></a>
-    									<a href="#m5"><li class="icon fas fa-quote-left" id="icon5" title="Testimonials"></li></a>
+    									<a href="#m5"><li class="icon fa fa-quote-left" id="icon5" title="Testimonials"></li></a>
     									<a href="#m6"><li class="icon fa fa-phone" id="icon6" title="Contact"></li></a>
     								</ul>
     								<div class="page" id="p1">
     									<div class="row" id="parent">
-    										<div class="col-md-4 offset-md-4 text-center" id="head">	
-    											<h1><span>My</span>Cafe</h1>
+    										<div class="col-md-6 col-md-offset-4 text-center" id="head">	
+    											<h1 class="wow bounceInDown"><span>My</span>Cafe</h1>
     											<br></br>
     											<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
     										</div>
     									</div>
-    									<div class="row">
-    										<div class="col-md-4 offset-md-4 text-center" id="child">	
-    											<h2>From 8:00 am to 10:30pm</h2>
+    									    <div class="row">
+    										<div class="col-md-6 col-md-offset-4 text-center" id="child">	
+    											<h2 class="wow bounceInUp">From 8:00 am to 10:30pm</h2>
     											<br>
-    										
     										</div>
-    									</div>
-    									
-    										<div class="listhead" id="footer1">
-    										
-    											
+    									   </div>
+
+    									   
+    										<div class="listhead wow pulse" id="footer1">
     											<div class="i1"><a href=""><li class="social fa fa-facebook" title="Social Media"></li></a></div>
     											<div class="i2"><a href=""><li class="social fab fa-instagram" title="Social Media"></li></a></div>
     											<div class="i3"><a href=""><li class="social fa fa-twitter" title="Social Media"></li></a></div>
     											<div class="i4"><a href=""><li class="social fa fa-youtube-play" title="Social Media"></li></a></div>
     										    <div class="c1"><li class="social fa fa-dot-circle-o" title="Social Media"></li></div>
-    									
-    								
     									</div>
     								</div>
     								<div class="page" id="p2">
     									<div class="row" id="parent">
-    										<div class="col-md-6 text-center" id="head">	
-    											<h1><span>About</span>Us</h1>
+    										<div class="col-md-6 text-center" id="head1">	
+    											<h1 class="wow bounceInDown"><span>About</span>Us</h1>
     											<br></br>
-    											<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+    											<p class="wow bounceInUp">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
     										</div>
-    									</div>
-    									<div class="row" id="parent">
     									
+    									
+                                            <div class="col-md-12 col-md-offset-2">
+    									  <div class="slider wow bounceInRight">
+                                          <figure class="slider__item"><img class="slider__image" src="./images/15.jpg"/>
+                                            <figcaption class="slider__caption">Image - 533</figcaption>
+                                          </figure>
+                                          <figure class="slider__item"><img class="slider__image" src="./images/16.jpg"/>
+                                            <figcaption class="slider__caption">Image - 623</figcaption>
+                                          </figure>
+                                          <figure class="slider__item"><img class="slider__image" src="./images/20.jpg"/>
+                                            <figcaption class="slider__caption">Image - 419</figcaption>
+                                          </figure>
+                                          <figure class="slider__item"><img class="slider__image" src="./images/17.jpg"/>
+                                            <figcaption class="slider__caption">Image - 490</figcaption>
+                                          </figure>
+                                          <figure class="slider__item"><img class="slider__image" src="./images/18.jpg"/>
+                                            <figcaption class="slider__caption">Image - 695</figcaption>
+                                          </figure>
+                                          <figure class="slider__item"><img class="slider__image" src="./images/19.jpg"/>
+                                            <figcaption class="slider__caption">Image - 458</figcaption>
+                                          </figure>
+                                          <figure class="slider__item"><img class="slider__image" src="./images/20.jpg"/>
+                                            <figcaption class="slider__caption">Image - 702</figcaption>
+                                          </figure>
+                                        </div>
+                                       
+                                    </div>
     													
 											
-										</div>
+									
+                                    </div>
     									<div class="listhead" id="footer2">
     											<div class="i1"><a href=""><li class="social fa fa-facebook" title="Social Media"></li></a></div>
     											<div class="i2"><a href=""><li class="social fab fa-instagram" title="Social Media"></li></a></div>
@@ -87,12 +128,395 @@
 
     								</div>
     								<div class="page" id="p3">
+                                                       <div class="container">
+                                                            <div class="row">
+                                                                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                                    <div class="carousel-inner row w-100 mx-auto">
+                                                              <div class="carousel-item col-md-4 col-sm-6 active">
+                                                              
+                                                                    <div class="pricingTable">
+                                                                        <h3 class="title">Starter</h3>
+                                                                      <div class="price-value">10$
+                                                                            <span class="month">Only</span>
+                                                                        </div>
+                                                                        <ul class="pricing-content">
+                                                                            <li>Paneer Shanghai<i class="item-price">$10.00</i></li>
+                                                                            <li>Baby Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+
+                                                                        </ul>
+                                                            
+                                                                    </div>
+                                                              
+                                                            </div>
+                                                            <div class="carousel-item col-md-4 col-sm-6">
+                                                             
+                                                                    <div class="pricingTable green">
+                                                                        <h3 class="title">Breakfast</h3>
+                                                                        <div class="price-value">7$
+                                                                            <span class="month">Only</span>
+                                                                        </div>
+                                                                        <ul class="pricing-content">
+                                                                               <li>Paneer Shanghai<i class="item-price">$10.00</i></li>
+                                                                            <li>Baby Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                          
+                                                                        </ul>
+                                                                       
+                                                                    </div>
+                                                               
+                                                            </div>
+                                                            <div class="carousel-item col-md-4 col-sm-6">
+                                                               
+                                                                    <div class="pricingTable blue">
+                                                                        <h3 class="title">Lunch</h3>
+                                                                        <div class="price-value">15$
+                                                                            <span class="month">Only</span>
+                                                                        </div>
+                                                                        <ul class="pricing-content">
+                                                                              <li>Paneer Shanghai<i class="item-price">$10.00</i></li>
+                                                                            <li>Baby Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                          
+                                                                        </ul>
+                                                                       
+                                                                    </div>
+                                                             
+                                                            </div>
+                                                            <div class="carousel-item col-md-4 col-sm-6">
+                                                                
+                                                                    <div class="pricingTable green">
+                                                                        <h3 class="title">Dinner</h3>
+                                                                        <div class="price-value">18$
+                                                                            <span class="month">Only</span>
+                                                                        </div>
+                                                                        <ul class="pricing-content">
+                                                                              <li>Paneer Shanghai<i class="item-price">$10.00</i></li>
+                                                                            <li>Baby Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                          
+                                                                        </ul>
+                                                                       
+                                                                    </div>
+                                                               
+                                                            </div>
+                                                           <div class="carousel-item col-md-4 col-sm-6">
+                                                                
+                                                                    <div class="pricingTable">
+                                                                        <h3 class="title">Dessert</h3>
+                                                                        <div class="price-value">20$
+                                                                            <span class="month">Only</span>
+                                                                        </div>
+                                                                        <ul class="pricing-content">
+                                                                              <li>Paneer Shanghai<i class="item-price">$10.00</i></li>
+                                                                            <li>Baby Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                          
+                                                                        </ul>
+                                                                       
+                                                                    </div>
+                                                            
+                                                            </div>
+                                                            <div class="carousel-item col-md-4 col-sm-6">
+                                                                 
+                                                                    <div class="pricingTable blue">
+                                                                        <h3 class="title">Drinks</h3>
+                                                                        <div class="price-value">12$
+                                                                            <span class="month">Only</span>
+                                                                        </div>
+                                                                        <ul class="pricing-content">
+                                                                              <li>Paneer Shanghai<i class="item-price">$10.00</i></li>
+                                                                            <li>Baby Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                          
+                                                                        </ul>
+                                                                       
+                                                                    </div>
+                                                               
+                                                            </div>
+                                                              <div class="carousel-item col-md-4 col-sm-6">
+                                                                 
+                                                                    <div class="pricingTable green">
+                                                                        <h3 class="title">Special</h3>
+                                                                        <div class="price-value">30$
+                                                                            <span class="month">Only</span>
+                                                                        </div>
+                                                                        <ul class="pricing-content">
+                                                                              <li>Paneer Shanghai<i class="item-price">$10.00</i></li>
+                                                                            <li>Baby Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                            <li>Crispy Corn Chilly<i class="item-price">$10.00</i></li>
+                                                                            <li>Chicken Lollypop<i class="item-price">$10.00</i></li>
+                                                                          
+                                                                        </ul>
+                                                                       
+                                                                    </div>
+                                                               
+                                                            </div> 
+                                                            </div>
+                                                             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                              <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                              <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div>
+                                                   </div>
+                                               </div>
     								</div>
     								<div class="page" id="p4">
+                                             <!--   Big container   -->
+                                        <div class="container">
+                                            <div class="row ">
+                                                <div class="col-sm-8 col-sm-offset-1">
+                                                    <!--      Wizard container        -->
+                                                    <div class="wizard-container">
+                                                        <div class="card wizard-card" data-color="red" id="wizard">
+                                                            <form action="" method="">
+                                                        <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
+
+                                                                <div class="wizard-header">
+                                                                    <h3 class="wizard-title">
+                                                                        Book a Table
+                                                                    </h3>
+                                                                    <h5>This information will let us know more about you.</h5>
+                                                                </div>
+                                                                <div class="wizard-navigation">
+                                                                    <ul>
+                                                                        <li><a href="#details" data-toggle="tab">Account</a></li>
+                                                                        <li><a href="#captain" data-toggle="tab">Table Type</a></li>
+                                                                        <li><a href="#description" data-toggle="tab">Extra Details</a></li>
+                                                                    </ul>
+                                                                </div>
+
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane" id="details">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12">
+                                                                                <h4 class="info-text"> Let's start with the basic details.</h4>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="input-group">
+                                                                                    <span class="input-group-addon">
+                                                                                        <i class="material-icons">perm_identity</i>
+                                                                                    </span>
+                                                                                    <div class="form-group label-floating">
+                                                                                        <label class="control-label">Your Name</label>
+                                                                                        <input name="name" type="text" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="input-group">
+                                                                                    <span class="input-group-addon">
+                                                                                        <i class="material-icons">settings_phone</i>
+                                                                                    </span>
+                                                                                    <div class="form-group label-floating">
+                                                                                        <label class="control-label">Your Phone Number</label>
+                                                                                        <input name="name2" type="password" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="form-group label-floating">
+                                                                                    <label class="control-label">No. Of People</label>
+                                                                                     <input name="name2" type="number" class="form-control">
+                                                                                      <!--  <option disabled="" selected=""></option>
+                                                                                        <option value="Afghanistan"> Afghanistan </option>
+                                                                                        <option value="Albania"> Albania </option>
+                                                                                        <option value="Algeria"> Algeria </option>
+                                                                                        <option value="American Samoa"> American Samoa </option>
+                                                                                        <option value="Andorra"> Andorra </option>
+                                                                                        <option value="Angola"> Angola </option>
+                                                                                        <option value="Anguilla"> Anguilla </option>
+                                                                                        <option value="Antarctica"> Antarctica </option>
+                                                                                        <option value="...">...</option>-->
+                                                                                   
+                                                                                </div>
+                                                                                <div class="form-group label-floating">
+                                                                                    <label class="control-label">Daily Budget</label>
+                                                                                    <select class="form-control">
+                                                                                        <option disabled="" selected=""></option>
+                                                                                        <option value="Afghanistan"> < $100 </option>
+                                                                                        <option value="Albania"> $100 - $499 </option>
+                                                                                        <option value="Algeria"> $499 - $999 </option>
+                                                                                        <option value="American Samoa"> $999+ </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="captain">
+                                                                        <h4 class="info-text">What type of Table would you want? </h4>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-10 col-sm-offset-1">
+                                                                                <div class="col-sm-4">
+                                                                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="This is good if you travel alone.">
+                                                                                        <input type="radio" name="job" value="Design">
+                                                                                        <div class="icon">
+                                                                                            <i class="material-icons">weekend</i>
+                                                                                        </div>
+                                                                                        <h6>Single</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-4">
+                                                                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this room if you're traveling with your family.">
+                                                                                        <input type="radio" name="job" value="Code">
+                                                                                        <div class="icon">
+                                                                                            <i class="material-icons">home</i>
+                                                                                        </div>
+                                                                                        <h6>Family</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-4">
+                                                                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you are coming with your team.">
+                                                                                        <input type="radio" name="job" value="Code">
+                                                                                        <div class="icon">
+                                                                                            <i class="material-icons">business</i>
+                                                                                        </div>
+                                                                                        <h6>Business</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="description">
+                                                                        <div class="row">
+                                                                            <h4 class="info-text"> Drop us a small description.</h4>
+                                                                            <div class="col-sm-12">
+                                                                                <div class="form-group">
+                                                                                    <label>Any Pre-arrangements</label>
+                                                                                    <textarea class="form-control" placeholder="" rows="6"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                           <!-- <div class="col-sm-4">
+                                                                                <div class="form-group">
+                                                                                    <label class="control-label">Example</label>
+                                                                                    <p class="description">"The room really nice name is recognized as being a really awesome room. We use it every sunday when we go fishing and we catch a lot. It has some kind of magic shield around it."</p>
+                                                                                </div>
+                                                                            </div>-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="wizard-footer">
+                                                                    <div class="pull-right">
+                                                                        <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Next' />
+                                                                        <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
+                                                                    </div>
+                                                                    <div class="pull-left">
+                                                                        <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div> <!-- wizard container -->
+                                                </div>
+                                            </div> <!-- row -->
+                                        </div> <!--  big container -->
+
+
+
+
     								</div>
     								<div class="page" id="p5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-8 col-offset-sm-1">
+                                                    <div id="testimonial-slider" class="owl-carousel">
+                                                        <div class="testimonial">
+                                                            <div class="pic">
+                                                                <img src="images/2.jpg">
+                                                            </div>
+                                                            <h3 class="title">Williamson</h3>
+                                                            <span class="post">Web Developer</span>
+                                                            <p class="description">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat sit vitae, consectetur adipisicing elit ipsam.
+                                                            </p>
+                                                        </div>
+                                                        <div class="testimonial">
+                                                            <div class="pic">
+                                                                <img src="images/2.jpg">
+                                                            </div>
+                                                            <h3 class="title">Kristina</h3>
+                                                            <span class="post">Web Designer</span>
+                                                            <p class="description">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat sit vitae, consectetur adipisicing elit ipsam.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
     								</div>
     								<div class="page" id="p6">
+
+                                        <div class="bg-contact100" style="background-image: url('images/bg-01.jpg');">
+                                            
+                                            <div class="container-contact100">
+                                                <div class="wrap-contact100">
+                                                    <div class="contact100-pic js-tilt" data-tilt>
+                                                        <img src="images/img-01.png" alt="IMG">
+                                                    </div>
+
+                                                    <form class="contact100-form validate-form">
+                                                        <span class="contact100-form-title">
+                                                            Get in touch
+                                                        </span>
+
+                                                        <div class="wrap-input100 validate-input" data-validate = "Name is required">
+                                                            <input class="input100" type="text" name="name" placeholder="Name">
+                                                            <span class="focus-input100"></span>
+                                                            <span class="symbol-input100">
+                                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                                            <input class="input100" type="text" name="email" placeholder="Email">
+                                                            <span class="focus-input100"></span>
+                                                            <span class="symbol-input100">
+                                                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                                                            <textarea class="input100" name="message" placeholder="Message"></textarea>
+                                                            <span class="focus-input100"></span>
+                                                        </div>
+
+                                                        <div class="container-contact100-form-btn">
+                                                            <button class="contact100-form-btn">
+                                                                Send
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
     								</div>
     							</section>
     							</div>
@@ -108,5 +532,23 @@
 
 	
 	<script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="js/jquery.bootstrap.js" type="text/javascript"></script>
+     <!--===============================================================================================-->
+    <script src="vendor/tilt.jquery.min.js"></script>
+    <script >
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+<!--===============================================================================================-->
+    <!--  Plugin for the Wizard -->
+    <script src="js/material-bootstrap-wizard.js"></script>
+
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/  -->
+    <script src="js/jquery.validate.min.js"></script>
+   
+<!--===============================================================================================-->
+  
+<!--===============================================================================================-->
 </body>
 </html>

@@ -1,3 +1,9 @@
+$(window).on('load', function() {
+
+  $("#preloader").fadeOut("slow");
+
+});
+
 $(document).ready(function() {
 
   var active1 = false;
@@ -21,4 +27,47 @@ $(document).ready(function() {
     active4 = !active4;
       
     });
+
+     $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        transitionStyle:"backSlide",
+        autoPlay:true
+    });
+});
+$("#myCarousel").on("slide.bs.carousel", function(e) {
+  var $e = $(e.relatedTarget);
+  var idx = $e.index();
+  var itemsPerSlide = 3;
+  var totalItems = $(".carousel-item").length;
+
+  if (idx >= totalItems - (itemsPerSlide - 1)) {
+    var it = itemsPerSlide - (totalItems - idx);
+    for (var i = 0; i < it; i++) {
+      // append slides to end
+      if (e.direction == "left") {
+        $(".carousel-item")
+          .eq(i)
+          .appendTo(".carousel-inner");
+      } else {
+        $(".carousel-item")
+          .eq(0)
+          .appendTo($(this).find(".carousel-inner"));
+      }
+    }
+  }
+});
+$(function(){
+  var btn = $(".slider");
+  
+  btn.on("click",function(){
+    $(".slider__item").first().clone().appendTo(".slider");
+    $(".slider__image").first().css({transform: "rotateX(-180deg)", opacity: 0});
+    setTimeout(function(){
+      $(".slider__item").first().remove();
+    },200);
+  });
 });
