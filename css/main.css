@@ -335,7 +335,7 @@ p {
 @media(max-width: 420px) {
   #child {
     left: 10%;
-    top: 60%;
+    top: 64%;
   }
 }
 
@@ -349,7 +349,7 @@ p {
 }
 @media(max-width: 420px) {
   #footer {
-    top: 75%;
+    top: 79%;
   }
 }
 #footer i {
