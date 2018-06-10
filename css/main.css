@@ -176,6 +176,7 @@ a {
 @media (max-width: 420px) {
   #head {
     left: 10%;
+    top: 35%;
   }
 
 } 
@@ -201,9 +202,10 @@ a {
     color: #F68B1F;
 }
 p {
-	font-style: italic;
+	
 	font-size: 20px;
 	text-decoration: none;
+  color: #ccc;
 }
 .img-tilt {
   top: 18%;
@@ -333,17 +335,37 @@ p {
 @media(max-width: 420px) {
   #child {
     left: 10%;
+    top: 60%;
   }
+}
+
+#footer {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transform: translateY(-75%);
+  resize: vertical;
+  overflow: auto;
+}
+@media(max-width: 420px) {
+  #footer {
+    top: 75%;
+  }
+}
+#footer i {
+  margin-right: 10px;
+  color: ;
 }
 
 #p1 h2 {
 	font-family: "Delius Swash Caps";
 	font-size: 24px;
 	color: #F68B1F;
+ 
 }
 #child p{
 		font-size: 15px;
-
+     font-weight: lighter;
 }
 span{
  font-family: "Delius Swash Caps";
