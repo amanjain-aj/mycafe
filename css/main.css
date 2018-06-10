@@ -199,7 +199,7 @@ p {
 }
 .listhead {
 
-  top:90%;
+  top:88%;
   left:80%;
   position:relative;
   display:block;
@@ -636,19 +636,31 @@ ul.pricing-content {
 
 }
 #p5 .container {
-   padding-top: 100px;
+  padding-top: 120px;
    z-index: -3;
    right: 0px;
    left: 0;
 }
+@media (max-width: 420px) {
+  #p5 .container {
+   padding-top: 55px;
+ }
+}
+
 .testimonial{
-    padding: 35px 50px;
+    padding: 20px 50px;
     margin: 0 20px 30px;
     border-radius: 0 70px 0 70px;
     border: 5px solid #ffc33c;
     border-left: none;
     border-right: none;
     text-align: center;
+}
+@media (max-width: 420px) {
+.testimonial {
+     padding: 15px 30px;
+    
+ }
 }
 .testimonial .pic{
     display: inline-block;
